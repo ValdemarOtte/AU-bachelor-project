@@ -1,0 +1,4 @@
+# LaTex
+*.aux
+*.log
+*.synctex.gz
