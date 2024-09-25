@@ -2,3 +2,25 @@
 *.aux
 *.log
 *.synctex.gz
+
+# Django
+db.sqlite3
+
+# Environments
+.venv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+__pycache__
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+mypy_cache
+
+# ruff
+.ruff_cache
+
+# pytest
+.pytest_cache/
