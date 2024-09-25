@@ -4,19 +4,21 @@
 # Third-party libraries
 
 # Local files
-from au_bachelor_project.utils.functions import print_matrix
 from au_bachelor_project.dp import dp
+from au_bachelor_project.utils.functions import print_matrix
 
 
-def main(items: list[dict]) -> None:
+def main(c: int, items: list[dict]) -> None:
     """
     Main function for AU Bachelr Project.
 
     Args:
+        c (int): Caaa
         items (list[dict]): List of items which will be used in the Knapsach Problems
+
     """
     # Simple dynamic programming
-    matrix = dp(items)
+    matrix = dp(c, items)
 
     # Print matrix
     print_matrix(matrix)
@@ -53,4 +55,4 @@ if __name__ == "__main__":
             "weight": 4,
         },
     ]
-    main(items)
+    main(1, items)
