@@ -4,27 +4,28 @@
 # Third-party libraries
 
 # Local files
-from au_bachelor_project.dp import dp
+from au_bachelor_project.kp_dp import kp_dp
 from au_bachelor_project.utils.functions import print_matrix
 
 
-def main(c: int, items: list[dict]) -> None:
+def main(capacity: int, items: list[dict]) -> None:
     """
     Main function for AU Bachelr Project.
 
     Args:
-        c (int): Caaa
-        items (list[dict]): List of items which will be used in the Knapsach Problems
+        capacity (int): The capacity of the knapsack.
+        items (list[dict]): List of items which will be used in the Knapsach Problems.
 
     """
-    # Simple dynamic programming
-    matrix = dp(c, items)
+    # Knapsack Problem - Dynamic Programming
+    matrix = kp_dp(capacity, items)
 
     # Print matrix
     print_matrix(matrix)
 
 
 if __name__ == "__main__":
+    capacity: int = 10
     items = [
         {
             "profit": 6,
@@ -55,4 +56,4 @@ if __name__ == "__main__":
             "weight": 4,
         },
     ]
-    main(1, items)
+    main(capacity, items)
