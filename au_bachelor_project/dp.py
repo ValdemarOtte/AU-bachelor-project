@@ -1,4 +1,4 @@
-def main(c: int, items: dict) -> None:
+def dp(c: int, items: dict) -> None:
     matrix: list = []
 
     for d in range(c + 1):
@@ -52,6 +52,3 @@ items = [
     },
 ]
 
-
-if __name__ == "__main__":
-    main(9, items)
