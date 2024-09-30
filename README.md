@@ -1,1 +1,1 @@
-# AU Bacheæpr Project
+# AU Bachelor Project
