@@ -2,17 +2,22 @@
 # Standard library
 
 # Third-party libraries
+from _pytest.capture import CaptureFixture
 
 # Local files
+from au_bachelor_project.utils.functions import print_matrix
 
 
 class TestFunctions:
-    def test_transform_list_urls(self):
+    def test_print_matrix(self, capsys: CaptureFixture):
         """Test if function will return the correct result."""
         # Setup
-        #correct_answers = [{"url": "url_1", "scraper": "A"}, {"url": "url_2", "scraper": "A"}]
-        #urls = ["url_1", "url_2"]
+        result: str = "c\\j|  0  1\n---+------\n 0 |  1  2\n 1 |  3  4\n"
+        matrix = [[1, 2], [3, 4]]
+
         # Run
-        # result = transform_list_urls(urls, "A")
+        print_matrix(matrix)
+        captured = capsys.readouterr()
+
         # Assert
-        assert 1 == 1
+        assert captured.out == result

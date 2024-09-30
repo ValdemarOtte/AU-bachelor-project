@@ -8,14 +8,15 @@
 
 def kp_dp(capacity: int, items: list[dict]) -> list[list]:
     """
-    Knapsack Problem - Dynamic Programming
+    Knapsack Problem - Dynamic Programming.
 
     Args:
         capacity (int): The capacity of the knapsack.
         items (list[dict]): List of items which will be used in the Knapsach Problems.
-    
+
     Returns:
         matrix (list[list]): A matrix with the solutions for the Knapsack Problem.
+
     """
     matrix: list = []
 
