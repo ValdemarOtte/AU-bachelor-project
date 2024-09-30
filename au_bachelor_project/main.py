@@ -26,7 +26,7 @@ def main(capacity: int, items: list[dict]) -> None:
 
 if __name__ == "__main__":
     capacity: int = 10
-    items = [
+    d_1_items: list[dict] = [
         {
             "profit": 6,
             "weight": 2,
@@ -56,4 +56,4 @@ if __name__ == "__main__":
             "weight": 4,
         },
     ]
-    main(capacity, items)
+    main(capacity, d_1_items)
